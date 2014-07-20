@@ -10,25 +10,25 @@
 					"Connections": [
 						{
 							"Type": "LocalEgress",
-							"Worker": "Uppercase",
-							"Alias": "Source_and_Uppercase",
+							"Worker": "Count",
+							"Alias": "Source_and_Count",
 							"Buffer": "0"
 						}
 					]
 				},
 				{
-					"Name": "Uppercase",
+					"Name": "Count",
 					"Connections": [
 						{
 							"Type": "LocalIngress",
 							"Worker": "Source",
-							"Alias": "Source_and_Uppercase",
+							"Alias": "Source_and_Count",
 							"Buffer": "0"
 						},
 						{
 							"Type": "LocalEgress",
 							"Worker": "Sink",
-							"Alias": "Sink_and_Uppercase",
+							"Alias": "Sink_and_Count",
 							"Buffer": "0"
 						}
 					]
@@ -38,8 +38,8 @@
                     "Connections": [
                         {
                             "Type": "LocalIngress",
-                            "Worker": "Uppercase",
-                            "Alias": "Sink_and_Uppercase",
+                            "Worker": "Count",
+                            "Alias": "Sink_and_Count",
                             "Buffer": "100"
                         }
                     ]
