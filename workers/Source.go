@@ -18,10 +18,7 @@ func (w Source) Init() {
 		p.Open()
 	}
 
-	client = twitterstream.NewClient("9tXWK5ZjaQwjp4AoFUbsReNdY",
-									 "qyNDhvcnqbbja3pBNcbQhOQzl0aXJdlch9WxTnwgR8QmPMuIbe",
-									 "215144158-zzVvdHodezegE7orVZiYORaCIoJAA5NMFdQP9EOt",
-									 "9ewMfIWuOjC2ODbJvlPYlzcfXZabjZxhIlOvl7QaSQAtC")
+	client = twitterstream.NewClient("", "", "", "")
 
 	log.INFO.Println("Worker " + w.Name() + " inited.")
 }
